@@ -1,0 +1,19 @@
+#include "TP_[1]Calculos.h"
+
+float calcularPrecioConDebito(int precio)
+{
+    float resultado;
+
+    resultado = precio - (precio * 0.10);
+
+    return resultado;
+}
+
+float calcularPrecioConCredito(int precio)
+{
+    float resultado;
+
+    resultado = precio + (precio * 0.25);
+
+    return resultado;
+}

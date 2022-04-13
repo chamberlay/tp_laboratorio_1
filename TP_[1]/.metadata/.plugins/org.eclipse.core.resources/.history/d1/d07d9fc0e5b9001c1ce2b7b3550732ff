@@ -1,0 +1,40 @@
+/*
+ ============================================================================
+ Name        : TP_[1].c
+ Author      : Vega Gomez Chamberlay (1° F)
+ Description : TP_[1]
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "Funciones.h"
+
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+
+	int opcionMenu;
+	/*float kmIngresados;
+	float precioAerolineas;
+	float precioLatam;*/
+
+	//opcionMenu = mostrarMenu();
+
+	/*if(opcionMenu == 1)
+	{
+		kmIngresados = ingresarNumeroFlotante("Ingrese los kilometros del vuelo: ", "Error. Reingrese los kilometros del vuelo (100 / 16.000): ", 100, 16000);
+	}
+
+	if(opcionMenu == 2)
+	{
+		precioAerolineas = ingresarNumeroFlotante("Ingrese el precio del vuelo con aerolineas: ", "Error. Debe ingresar un precio valido (100 / 1.000.000): ", 1000, 1000000);
+
+		precioLatam = ingresarNumeroFlotante("Ingrese el precio del vuelo con latam: ", "Error. Debe ingresar un precio valido (100 / 1.000.000): ", 1000, 1000000);
+	}*/
+
+	//procesarMenu(opcionMenu);
+
+	return EXIT_SUCCESS;
+}

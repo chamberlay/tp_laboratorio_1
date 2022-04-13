@@ -1,0 +1,162 @@
+#include "Funciones.h"
+
+void procesarMenu(opcion, kmIngresados, precioAerolineas, precioLatam)
+{
+	switch(opcionMenu)
+			{
+				case 1:
+
+					ingresarNumeroFlotante("Ingrese los kilometros del vuelo: ", "Error. Reingrese los kilometros del vuelo (100 / 16.000): ", 100, 16000);
+
+				break;
+
+				case 2:
+
+					ingresarNumeroFlotante("Ingrese el precio del vuelo con aerolineas: ", "Error. Debe ingresar un precio valido (100 / 1.000.000): ", 1000, 1000000);
+
+					ingresarNumeroFlotante("Ingrese el precio del vuelo con latam: ", "Error. Debe ingresar un precio valido (100 / 1.000.000): ", 1000, 1000000);
+
+				break;
+
+				case 3:
+
+					printf("en construccion.");
+					// si se cargaron los km y los precios en cada aerolinea. Mostrar un mensaje que confirme que se calcularon los resultados.
+				break;
+
+				case 4:
+					//printf("en construccion.");
+					printf("Latam: \n"
+							"a) Precio con tarjeta de débito: %.2f\n"
+							"b) Precio con tarjeta de crédito: %.2f\n"
+							"c) Precio pagando con bitcoin : %.2f\n"
+							"d) Precio unitario: %.2f\n"
+							"Aerolineas: \n"
+							"a) Precio con tarjeta de débito: %.2f\n"
+							"b) Precio con tarjeta de crédito: %.2f\n"
+							"c) Precio pagando con bitcoin : %.2f\n"
+							"d) Precio unitario: %.2f\n"
+							"\nLa diferencia de precio es: %.2f");
+				break;
+
+				case 5:
+					printf("en construccion.");
+				break;
+
+				case 6:
+					printf("\nPrograma terminado!!");
+				break;
+			}
+
+}
+
+void mostrarMenu(void)
+{
+    int opcion;
+	float kmIngresados;
+	float precioAerolineas;
+	float precioLatam;
+
+	do
+	{
+		pedirEntero(&opcion, "1. Ingresar kilómetros:\n"
+						 	 	 "2. Ingresar precio de vuelos:\n"
+							 	 "3. Calcular todos los costos.\n"
+								 "4. Informar resultados.\n"
+								 "5. Carga forzada de datos.\n"
+								 "6. Salir.\n"
+								 "Ingrese una opción: \n",
+
+								 "Error. Debe ingresar una opcion valida\n"
+								 "1. Ingresar kilómetros:\n"
+								 "2. Ingresar precio de vuelos:\n"
+								 "3. Calcular todos los costos.\n"
+								 "4. Informar resultados.\n"
+								 "5. Carga forzada de datos.\n"
+								 "6. Salir.\n"
+								 "Ingrese una opción: \n", 1, 6);
+		if(opcion == 1)
+		{
+			kmIngresados = ingresarNumeroFlotante("Ingrese los kilometros del vuelo: ", "Error. Reingrese los kilometros del vuelo (100 / 16.000): ", 100, 16000);
+		}
+		else
+		{
+			if(opcion == 2)
+			{
+				precioAerolineas = ingresarNumeroFlotante("Ingrese el precio del vuelo con aerolineas: ", "Error. Debe ingresar un precio valido (100 / 1.000.000): ", 1000, 1000000);
+
+				precioLatam = ingresarNumeroFlotante("Ingrese el precio del vuelo con latam: ", "Error. Debe ingresar un precio valido (100 / 1.000.000): ", 1000, 1000000);
+			}else
+			{
+				procesarMenu(opcion, kmIngresados, precioAerolineas, precioLatam);
+			}
+		}
+
+	}while(opcion != 6);
+}
+
+float ingresarNumeroFlotante(char* mensaje, char* mensajeError, float minimo, float maximo)
+{
+	float numero;
+
+	printf(mensaje);
+	fflush(stdin);
+	scanf("%f", &numero);
+
+	while(numero < minimo || numero > maximo)
+	{
+		printf(mensajeError);
+		fflush(stdin);
+		scanf("%f", &numero);
+	}
+
+	return numero;
+}
+
+int ingresarNumeroEntero(char* mensaje, char* mensajeError, int min, int max)
+{
+	int numeroIngresado;
+
+	if(mensaje != NULL && mensajeError != NULL && min < max)
+	{
+		printf("%s", mensaje);
+		fflush(stdin);
+		scanf("%d", &numeroIngresado);
+
+		while(numeroIngresado < min || numeroIngresado > max)
+		{
+			printf("%s", mensajeError);
+			fflush(stdin);
+			scanf("%d", &numeroIngresado);
+		}
+
+	}
+
+	return numeroIngresado;
+}
+
+
+int pedirEntero(int* entero, char* mensaje, char* mensajeError, int min, int max)
+{
+	int retorno = -1;
+	int numeroIngresado;
+
+	if(entero != NULL && mensaje != NULL && mensajeError != NULL && min < max)
+	{
+		printf("%s", mensaje);
+		fflush(stdin);
+		scanf("%d", &numeroIngresado);
+
+		while(numeroIngresado < min || numeroIngresado > max)
+		{
+			printf("%s", mensajeError);
+			fflush(stdin);
+			scanf("%d", &numeroIngresado);
+		}
+
+		*entero = numeroIngresado;
+		retorno = 0;
+	}
+
+	return retorno;
+}

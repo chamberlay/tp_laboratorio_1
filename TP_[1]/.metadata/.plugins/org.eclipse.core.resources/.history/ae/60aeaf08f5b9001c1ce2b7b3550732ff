@@ -1,0 +1,7 @@
+#ifndef TP__1_CALCULOS_H_
+#define TP__1_CALCULOS_H_
+
+float calcularPrecioConDebito(int precio);
+float calcularPrecioConCredito(int precio);
+
+#endif /* TP__1_CALCULOS_H_ */
