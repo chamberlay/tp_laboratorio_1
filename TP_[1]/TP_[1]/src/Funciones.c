@@ -2,6 +2,17 @@
 #include "Funciones.h"
 #include "inputs.h"
 
+/**
+ * @fn void procesarMenu(int opcion, float kmIngresados, float  precioAerolineas, float precioLatam, int indexKm, int indexAerolineas, int indexLatam)
+ * @brief  procesa el menu segun la opcion que se ingrese.
+ * @param opcion: es la opcion que se ingreso.
+ * @param kmIngresados: son los kms que se ingresaron.
+ * @param precioAerolineas: es el importe que se ingreso como costo del vuelo con aerolineas argentinas.
+ * @param precioLatam: es el importe que se ingreso como costo del vuelo con latam.
+ * @param indexKm: indicador que devuelve -1 si no se ingreso ningun dato o 0 en caso contrario.
+ * @param indexAerolineas: indicador que devuelve -1 si no se ingreso ningun dato o 0 en caso contrario.
+ * @param indexLatam: indicador que devuelve -1 si no se ingreso ningun dato o 0 en caso contrario.
+ */
 void procesarMenu(int opcion, float kmIngresados, float  precioAerolineas, float precioLatam, int indexKm, int indexAerolineas, int indexLatam)
 {
 	switch(opcion)
@@ -93,6 +104,10 @@ void procesarMenu(int opcion, float kmIngresados, float  precioAerolineas, float
 			}
 }
 
+/**
+ * @fn void mostrarMenu(void)
+ * @brief  muestra el menu y capta la opcion que se ingrese.
+ */
 void mostrarMenu(void)
 {
 	int indexKm;

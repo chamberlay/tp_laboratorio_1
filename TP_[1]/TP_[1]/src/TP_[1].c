@@ -12,8 +12,6 @@
 #include "Funciones.h"
 #include "inputs.h"
 
-//hacer los comentarios donde se explica la funcion de las funciones.
-
 int main(void) {
 
 	setbuf(stdout, NULL);
