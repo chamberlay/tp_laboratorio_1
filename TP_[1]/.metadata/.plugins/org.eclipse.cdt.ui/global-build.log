@@ -1596,3 +1596,517 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1]Calculos.o" "..\\src\\TP_
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1].o" "..\\src\\TP_[1].c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\inputs.o" "..\\src\\inputs.c" 
 gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+20:59:31 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1]Calculos.o" "..\\src\\TP_[1]Calculos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1].o" "..\\src\\TP_[1].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\inputs.o" "..\\src\\inputs.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+21:00:59 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'procesarMenu':
+..\src\Funciones.c:56:33: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+   56 |      printf("KMs ingresados: %.2f\n"
+      |                              ~~~^
+      |                                 |
+      |                                 double
+      |                              %.2d
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+21:05:05 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'procesarMenu':
+..\src\Funciones.c:60:33: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+   60 |      printf("KMs ingresados: %.2f\n"
+      |                              ~~~^
+      |                                 |
+      |                                 double
+      |                              %.2d
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1].o" "..\\src\\TP_[1].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1]Calculos.o" "..\\src\\TP_[1]Calculos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\inputs.o" "..\\src\\inputs.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+21:07:04 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1]Calculos.o" "..\\src\\TP_[1]Calculos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'procesarMenu':
+..\src\Funciones.c:68:10: error: 'kmCargaForzada' undeclared (first use in this function)
+   68 |          kmCargaForzada,
+      |          ^~~~~~~~~~~~~~
+..\src\Funciones.c:68:10: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Funciones.c:69:34: error: 'precioLatamCargaForzada' undeclared (first use in this function)
+   69 |          calcularPrecioConDebito(precioLatamCargaForzada),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~
+..\src\Funciones.c:73:34: error: 'precioAerolineasCargaForzada' undeclared (first use in this function)
+   73 |          calcularPrecioConDebito(precioAerolineasCargaForzada),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+21:08:24 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1].o" "..\\src\\TP_[1].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\inputs.o" "..\\src\\inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'procesarMenu':
+..\src\Funciones.c:56:33: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+   56 |      printf("KMs ingresados: %.2f\n"
+      |                              ~~~^
+      |                                 |
+      |                                 double
+      |                              %.2d
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+21:10:49 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'procesarMenu':
+..\src\Funciones.c:57:32: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+   57 |      printf("km ingresados: %.2f\nPrecio latam: %.2f\nPrecio aerolineas: %.2f", KM_CARGA_FORZADA, PRECIO_LATAM_CARGA_FORZADA, PRECIO_LATAM_CARGA_FORZADA);
+      |                             ~~~^
+      |                                |
+      |                                double
+      |                             %.2d
+..\src\Funciones.c:57:52: warning: format '%f' expects argument of type 'double', but argument 3 has type 'int' [-Wformat=]
+   57 |      printf("km ingresados: %.2f\nPrecio latam: %.2f\nPrecio aerolineas: %.2f", KM_CARGA_FORZADA, PRECIO_LATAM_CARGA_FORZADA, PRECIO_LATAM_CARGA_FORZADA);
+      |                                                 ~~~^
+      |                                                    |
+      |                                                    double
+      |                                                 %.2d
+..\src\Funciones.c:57:77: warning: format '%f' expects argument of type 'double', but argument 4 has type 'int' [-Wformat=]
+   57 |      printf("km ingresados: %.2f\nPrecio latam: %.2f\nPrecio aerolineas: %.2f", KM_CARGA_FORZADA, PRECIO_LATAM_CARGA_FORZADA, PRECIO_LATAM_CARGA_FORZADA);
+      |                                                                          ~~~^
+      |                                                                             |
+      |                                                                             double
+      |                                                                          %.2d
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+21:20:04 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'procesarMenu':
+..\src\Funciones.c:56:32: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+   56 |      printf("km ingresados: %.2f\nPrecio latam: %.2f\nPrecio aerolineas: %.2f", 7090, 159339, 162965);
+      |                             ~~~^                                                ~~~~
+      |                                |                                                |
+      |                                double                                           int
+      |                             %.2d
+..\src\Funciones.c:56:52: warning: format '%f' expects argument of type 'double', but argument 3 has type 'int' [-Wformat=]
+   56 |      printf("km ingresados: %.2f\nPrecio latam: %.2f\nPrecio aerolineas: %.2f", 7090, 159339, 162965);
+      |                                                 ~~~^                                  ~~~~~~
+      |                                                    |                                  |
+      |                                                    double                             int
+      |                                                 %.2d
+..\src\Funciones.c:56:77: warning: format '%f' expects argument of type 'double', but argument 4 has type 'int' [-Wformat=]
+   56 |      printf("km ingresados: %.2f\nPrecio latam: %.2f\nPrecio aerolineas: %.2f", 7090, 159339, 162965);
+      |                                                                          ~~~^                 ~~~~~~
+      |                                                                             |                 |
+      |                                                                             double            int
+      |                                                                          %.2d
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+21:21:47 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\inputs.o" "..\\src\\inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1]Calculos.o" "..\\src\\TP_[1]Calculos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1].o" "..\\src\\TP_[1].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'procesarMenu':
+..\src\Funciones.c:56:33: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+   56 |      printf("KMs ingresados: %.2f\n"
+      |                              ~~~^
+      |                                 |
+      |                                 double
+      |                              %.2d
+......
+   68 |          7090,
+      |          ~~~~                    
+      |          |
+      |          int
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+21:23:04 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+21:24:32 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+21:25:53 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\inputs.o" "..\\src\\inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1]Calculos.o" "..\\src\\TP_[1]Calculos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1].o" "..\\src\\TP_[1].c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+21:26:55 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1].o" "..\\src\\TP_[1].c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+21:31:51 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+Info: Nothing to build for TP_[1]
+21:36:13 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+21:36:40 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+21:37:36 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+21:39:27 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+21:44:41 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1].o" "..\\src\\TP_[1].c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+Info: Nothing to build for TP_[1]
+21:48:55 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+22:00:38 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\inputs.o" "..\\src\\inputs.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+22:09:58 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+22:13:08 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\inputs.o" "..\\src\\inputs.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Funciones.o: in function `mostrarMenu':
+C:\Users\chamb\Desktop\TP_[1]\TP_[1]\Debug/../src/Funciones.c:114: undefined reference to `ingresarNumeroFlotante'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\chamb\Desktop\TP_[1]\TP_[1]\Debug/../src/Funciones.c:118: undefined reference to `ingresarNumeroFlotante'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\chamb\Desktop\TP_[1]\TP_[1]\Debug/../src/Funciones.c:120: undefined reference to `ingresarNumeroFlotante'
+collect2.exe: error: ld returned 1 exit status
+22:13:40 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1]Calculos.o" "..\\src\\TP_[1]Calculos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1].o" "..\\src\\TP_[1].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:114:21: warning: implicit declaration of function 'ingresarNumeroFlotante' [-Wimplicit-function-declaration]
+  114 |      kmIngresados = ingresarNumeroFlotante("Ingrese los kilometros del vuelo: \n", "Error. Reingrese los kilometros del vuelo (100 / 16.000): \n", 100, 16000);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\inputs.o" "..\\src\\inputs.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Funciones.o: in function `mostrarMenu':
+C:\Users\chamb\Desktop\TP_[1]\TP_[1]\Debug/../src/Funciones.c:114: undefined reference to `ingresarNumeroFlotante'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\chamb\Desktop\TP_[1]\TP_[1]\Debug/../src/Funciones.c:118: undefined reference to `ingresarNumeroFlotante'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\chamb\Desktop\TP_[1]\TP_[1]\Debug/../src/Funciones.c:120: undefined reference to `ingresarNumeroFlotante'
+collect2.exe: error: ld returned 1 exit status
+22:19:14 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:119:25: warning: implicit declaration of function 'ingresarNumeroFlotante' [-Wimplicit-function-declaration]
+  119 |      precioAerolineas = ingresarNumeroFlotante("Ingrese el precio del vuelo con aerolineas: \n", "Error. Debe ingresar un precio valido (100 / 1.000.000): \n", 1000, 1000000);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Funciones.o: in function `mostrarMenu':
+C:\Users\chamb\Desktop\TP_[1]\TP_[1]\Debug/../src/Funciones.c:119: undefined reference to `ingresarNumeroFlotante'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\chamb\Desktop\TP_[1]\TP_[1]\Debug/../src/Funciones.c:121: undefined reference to `ingresarNumeroFlotante'
+collect2.exe: error: ld returned 1 exit status
+22:20:06 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:122:20: warning: implicit declaration of function 'ingresarNumeroFlotante' [-Wimplicit-function-declaration]
+  122 |      precioLatam = ingresarNumeroFlotante("Ingrese el precio del vuelo con latam: \n", "Error. Debe ingresar un precio valido (100 / 1.000.000): \n", 1000, 1000000);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Funciones.o: in function `mostrarMenu':
+C:\Users\chamb\Desktop\TP_[1]\TP_[1]\Debug/../src/Funciones.c:122: undefined reference to `ingresarNumeroFlotante'
+collect2.exe: error: ld returned 1 exit status
+22:21:00 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+22:28:41 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\inputs.o" "..\\src\\inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:115:6: error: a label can only be part of a statement and a declaration is not a statement
+  115 |      int index;
+      |      ^~~
+22:29:20 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:115:6: error: a label can only be part of a statement and a declaration is not a statement
+  115 |      float index;
+      |      ^~~~~
+22:31:54 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:115:6: error: a label can only be part of a statement and a declaration is not a statement
+  115 |      int index;
+      |      ^~~
+..\src\Funciones.c:115:10: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+  115 |      int index;
+      |          ^~~~~
+22:32:19 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+22:33:10 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:115:6: error: a label can only be part of a statement and a declaration is not a statement
+  115 |      int index;
+      |      ^~~
+22:33:26 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\inputs.o" "..\\src\\inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1].o" "..\\src\\TP_[1].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1]Calculos.o" "..\\src\\TP_[1]Calculos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:115:6: error: a label can only be part of a statement and a declaration is not a statement
+  115 |      int index;
+      |      ^~~
+..\src\Funciones.c:115:10: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+  115 |      int index;
+      |          ^~~~~
+22:37:28 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+22:44:05 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:115:6: error: a label can only be part of a statement and a declaration is not a statement
+  115 |      int index;
+      |      ^~~
+..\src\Funciones.c:115:10: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+  115 |      int index;
+      |          ^~~~~
+23:04:13 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+23:05:20 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+Info: Nothing to build for TP_[1]
+23:07:10 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+23:09:12 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+Info: Nothing to build for TP_[1]
+Info: Nothing to build for TP_[1]
+23:12:53 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:88:6: warning: variable 'probando' set but not used [-Wunused-but-set-variable]
+   88 |  int probando;
+      |      ^~~~~~~~
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+23:14:32 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:92:8: warning: unused variable 'precioLatam' [-Wunused-variable]
+   92 |  float precioLatam;
+      |        ^~~~~~~~~~~
+..\src\Funciones.c:91:8: warning: unused variable 'precioAerolineas' [-Wunused-variable]
+   91 |  float precioAerolineas;
+      |        ^~~~~~~~~~~~~~~~
+..\src\Funciones.c:90:8: warning: unused variable 'kmIngresados' [-Wunused-variable]
+   90 |  float kmIngresados;
+      |        ^~~~~~~~~~~~
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+23:21:44 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:95:3: error: 'probando' undeclared (first use in this function)
+   95 |   probando = pedirEntero(&opcion, "\n1. Ingresar kilómetros:\n"
+      |   ^~~~~~~~
+..\src\Funciones.c:95:3: note: each undeclared identifier is reported only once for each function it appears in
+23:21:55 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+23:27:02 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:114:8: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+  114 |    int index;
+      |        ^~~~~
+..\src\Funciones.c:91:8: warning: unused variable 'precioLatam' [-Wunused-variable]
+   91 |  float precioLatam;
+      |        ^~~~~~~~~~~
+..\src\Funciones.c:90:8: warning: unused variable 'precioAerolineas' [-Wunused-variable]
+   90 |  float precioAerolineas;
+      |        ^~~~~~~~~~~~~~~~
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+23:28:09 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:114:8: warning: variable 'indexKm' set but not used [-Wunused-but-set-variable]
+  114 |    int indexKm;
+      |        ^~~~~~~
+..\src\Funciones.c:119:26: error: 'indexKm' undeclared (first use in this function)
+  119 |   printf("Index km: %d", indexKm);
+      |                          ^~~~~~~
+..\src\Funciones.c:119:26: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Funciones.c:91:8: warning: unused variable 'precioLatam' [-Wunused-variable]
+   91 |  float precioLatam;
+      |        ^~~~~~~~~~~
+..\src\Funciones.c:90:8: warning: unused variable 'precioAerolineas' [-Wunused-variable]
+   90 |  float precioAerolineas;
+      |        ^~~~~~~~~~~~~~~~
+23:28:30 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:92:8: warning: unused variable 'precioLatam' [-Wunused-variable]
+   92 |  float precioLatam;
+      |        ^~~~~~~~~~~
+..\src\Funciones.c:91:8: warning: unused variable 'precioAerolineas' [-Wunused-variable]
+   91 |  float precioAerolineas;
+      |        ^~~~~~~~~~~~~~~~
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+Info: Nothing to build for TP_[1]
+23:32:07 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:92:8: warning: unused variable 'precioLatam' [-Wunused-variable]
+   92 |  float precioLatam;
+      |        ^~~~~~~~~~~
+..\src\Funciones.c:91:8: warning: unused variable 'precioAerolineas' [-Wunused-variable]
+   91 |  float precioAerolineas;
+      |        ^~~~~~~~~~~~~~~~
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+23:34:02 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:90:6: warning: variable 'indexLatam' set but not used [-Wunused-but-set-variable]
+   90 |  int indexLatam;
+      |      ^~~~~~~~~~
+..\src\Funciones.c:89:6: warning: variable 'indexAerolinea' set but not used [-Wunused-but-set-variable]
+   89 |  int indexAerolinea;
+      |      ^~~~~~~~~~~~~~
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+23:34:50 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+23:37:59 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1].o" "..\\src\\TP_[1].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\inputs.o" "..\\src\\inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1]Calculos.o" "..\\src\\TP_[1]Calculos.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+23:38:56 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+Info: Nothing to build for TP_[1]
+23:41:04 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:147:6: error: too few arguments to function 'procesarMenu'
+  147 |      procesarMenu(opcion, kmIngresados, precioAerolineas, precioLatam);
+      |      ^~~~~~~~~~~~
+..\src\Funciones.c:5:6: note: declared here
+    5 | void procesarMenu(int opcion, float kmIngresados, float  precioAerolineas, float precioLatam, int indexKm, int indexAerolineas, int indexLatam)
+      |      ^~~~~~~~~~~~
+23:41:29 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'mostrarMenu':
+..\src\Funciones.c:147:6: warning: 'indexAerolinea' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  147 |      procesarMenu(opcion, kmIngresados, precioAerolineas, precioLatam, indexAerolinea, indexKm, indexLatam);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Funciones.c:147:6: warning: 'indexLatam' may be used uninitialized in this function [-Wmaybe-uninitialized]
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+23:41:54 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+Info: Nothing to build for TP_[1]
+Info: Nothing to build for TP_[1]
+Info: Nothing to build for TP_[1]
+23:45:57 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\inputs.o" "..\\src\\inputs.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+23:49:56 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'procesarMenu':
+..\src\Funciones.c:14:19: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   14 |       kmIngresados,
+      |                   ^
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+23:49:59 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+..\src\Funciones.c: In function 'procesarMenu':
+..\src\Funciones.c:14:7: warning: statement with no effect [-Wunused-value]
+   14 |       kmIngresados;
+      |       ^~~~~~~~~~~~
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+23:50:12 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+23:51:43 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[1].o" "..\\src\\TP_[1].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+23:52:23 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 
+23:55:57 **** Incremental Build of configuration Debug for project TP_[1] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funciones.o" "..\\src\\Funciones.c" 
+gcc -o TP_[1].exe "src\\Funciones.o" "src\\TP_[1].o" "src\\TP_[1]Calculos.o" "src\\inputs.o" 

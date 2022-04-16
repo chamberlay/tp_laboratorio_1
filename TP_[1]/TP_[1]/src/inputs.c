@@ -2,44 +2,31 @@
 #include "Funciones.h"
 #include "inputs.h"
 
-float ingresarNumeroFlotante(char* mensaje, char* mensajeError, float minimo, float maximo)
+int pedirFloat(float* flotante, char* mensaje, char* mensajeError, float min, float max)
 {
-	float numero;
+	int retorno = -1;
+	float numeroIngresado;
 
-	printf(mensaje);
-	fflush(stdin);
-	scanf("%f", &numero);
-
-	while(numero < minimo || numero > maximo)
-	{
-		printf(mensajeError);
-		fflush(stdin);
-		scanf("%f", &numero);
-	}
-
-	return numero;
-}
-int ingresarNumeroEntero(char* mensaje, char* mensajeError, int min, int max)
-{
-	int numeroIngresado;
-
-	if(mensaje != NULL && mensajeError != NULL && min < max)
+	if(flotante != NULL && mensaje != NULL && mensajeError != NULL && min < max)
 	{
 		printf("%s", mensaje);
 		fflush(stdin);
-		scanf("%d", &numeroIngresado);
+		scanf("%f", &numeroIngresado);
 
 		while(numeroIngresado < min || numeroIngresado > max)
 		{
 			printf("%s", mensajeError);
 			fflush(stdin);
-			scanf("%d", &numeroIngresado);
+			scanf("%f", &numeroIngresado);
 		}
 
+		*flotante = numeroIngresado;
+		retorno = 0;
 	}
 
-	return numeroIngresado;
+	return retorno;
 }
+
 int pedirEntero(int* entero, char* mensaje, char* mensajeError, int min, int max)
 {
 	int retorno = -1;

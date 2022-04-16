@@ -2,26 +2,36 @@
 #include "Funciones.h"
 #include "inputs.h"
 
-void procesarMenu(int opcion, float kmIngresados, float  precioAerolineas, float precioLatam)
+void procesarMenu(int opcion, float kmIngresados, float  precioAerolineas, float precioLatam, int indexKm, int indexAerolineas, int indexLatam)
 {
 	switch(opcion)
 			{
 
 				case 3:
 
-					if(kmIngresados > 0 && precioLatam > 0 && precioAerolineas > 0)
+					if(indexKm == 0 && indexAerolineas == 0 && indexLatam == 0)
 					{
-						printf("\nSe realizaron los calculos necesarios.");
+						calcularPrecioConDebito(precioLatam);
+						calcularPrecioConCredito(precioLatam);
+						calcularPrecioConBitcoin(precioLatam);
+						mostrarPrecioPorKm(precioLatam, kmIngresados);
+						calcularPrecioConDebito(precioAerolineas);
+						calcularPrecioConCredito(precioAerolineas);
+						calcularPrecioConBitcoin(precioAerolineas);
+						mostrarPrecioPorKm(precioAerolineas, kmIngresados);
+						mostrarDiferenciaDePrecios(precioLatam, precioAerolineas);
+
+						printf("\nSe realizaron los calculos necesarios.\n");
 					}else
 					{
-						printf("\nNo se han cargado los datos.");
+						printf("\nNo se han cargado los datos.\n");
 					}
 
 				break;
 
 				case 4:
 
-					if(kmIngresados > 0 && precioLatam > 0 && precioAerolineas > 0)
+					if(indexKm == 0 && indexAerolineas == 0 && indexLatam == 0)
 					{
 						printf("KMs ingresados: %.2f\n"
 								"\nPrecio Latam: \n"
@@ -47,13 +57,34 @@ void procesarMenu(int opcion, float kmIngresados, float  precioAerolineas, float
 								mostrarDiferenciaDePrecios(precioLatam, precioAerolineas));
 					}else
 					{
-						printf("No se han cargado los datos.");
+						printf("No se han cargado los datos.\n");
 					}
 
 				break;
 
 				case 5:
-					printf("en construccion.");
+					printf("KMs ingresados: %d\n"
+						   "\nPrecio Latam: \n"
+						   "a) Precio con tarjeta de débito: %.2f\n"
+						   "b) Precio con tarjeta de crédito: %.2f\n"
+						   "c) Precio pagando con bitcoin : %.7lf\n"
+						   "d) Precio unitario: %.2f\n"
+						   "\nPrecio Aerolineas: \n"
+						   "a) Precio con tarjeta de débito: %.2f\n"
+						   "b) Precio con tarjeta de crédito: %.2f\n"
+						   "c) Precio pagando con bitcoin : %.7lf\n"
+						   "d) Precio unitario: %.2f\n"
+						   "\nLa diferencia de precio es: %.2f\n",
+						   KM_CARGA_FORZADA,
+						   calcularPrecioConDebito(PRECIO_LATAM_CARGA_FORZADA),
+						   calcularPrecioConCredito(PRECIO_LATAM_CARGA_FORZADA),
+						   calcularPrecioConBitcoin(PRECIO_LATAM_CARGA_FORZADA),
+						   mostrarPrecioPorKm(PRECIO_LATAM_CARGA_FORZADA, KM_CARGA_FORZADA),
+						   calcularPrecioConDebito(PRECIO_AEROLINEAS_CARGA_FORZADA),
+						   calcularPrecioConCredito(PRECIO_AEROLINEAS_CARGA_FORZADA),
+						   calcularPrecioConBitcoin(PRECIO_AEROLINEAS_CARGA_FORZADA),
+						   mostrarPrecioPorKm(PRECIO_AEROLINEAS_CARGA_FORZADA, KM_CARGA_FORZADA),
+						   mostrarDiferenciaDePrecios(PRECIO_LATAM_CARGA_FORZADA, PRECIO_AEROLINEAS_CARGA_FORZADA));
 				break;
 
 				case 6:
@@ -64,6 +95,9 @@ void procesarMenu(int opcion, float kmIngresados, float  precioAerolineas, float
 
 void mostrarMenu(void)
 {
+	int indexKm;
+	int indexAerolinea;
+	int indexLatam;
     int opcion;
 	float kmIngresados;
 	float precioAerolineas;
@@ -71,7 +105,7 @@ void mostrarMenu(void)
 
 	do
 	{
-		pedirEntero(&opcion, "1. Ingresar kilómetros:\n"
+		pedirEntero(&opcion, "\n1. Ingresar kilómetros:\n"
 						 	 	 "2. Ingresar precio de vuelos:\n"
 							 	 "3. Calcular todos los costos.\n"
 								 "4. Informar resultados.\n"
@@ -88,22 +122,21 @@ void mostrarMenu(void)
 								 "6. Salir.\n"
 								 "Ingrese una opción: \n", 1, 6);
 
-		if(opcion == 1)
-		{
-			kmIngresados = ingresarNumeroFlotante("Ingrese los kilometros del vuelo: ", "Error. Reingrese los kilometros del vuelo (100 / 16.000): ", 100, 16000);
-		}
-		else
-		{
-			if(opcion == 2)
-			{
-				precioAerolineas = ingresarNumeroFlotante("Ingrese el precio del vuelo con aerolineas: ", "Error. Debe ingresar un precio valido (100 / 1.000.000): ", 1000, 1000000);
+		switch(opcion){
+				case 1:
+					indexKm = pedirFloat(&kmIngresados, "Ingrese los kilometros del vuelo: \n", "Error. Reingrese los kilometros del vuelo (100 / 16.000): \n", 100, 16000);
+				break;
 
-				precioLatam = ingresarNumeroFlotante("Ingrese el precio del vuelo con latam: ", "Error. Debe ingresar un precio valido (100 / 1.000.000): ", 1000, 1000000);
-			}else
-			{
-				procesarMenu(opcion, kmIngresados, precioAerolineas, precioLatam);
-			}
+				case 2:
+					indexAerolinea = pedirFloat(&precioAerolineas, "Ingrese el precio del vuelo con aerolineas: \n", "Error. Debe ingresar un precio valido (100 / 1.000.000): \n", 1000, 1000000);
+
+					indexLatam = pedirFloat(&precioLatam, "Ingrese el precio del vuelo con latam: \n", "Error. Debe ingresar un precio valido (100 / 1.000.000): \n", 1000, 1000000);
+				break;
+
+				default:
+					procesarMenu(opcion, kmIngresados, precioAerolineas, precioLatam, indexAerolinea, indexKm, indexLatam);
 		}
 
 	}while(opcion != 6);
+
 }

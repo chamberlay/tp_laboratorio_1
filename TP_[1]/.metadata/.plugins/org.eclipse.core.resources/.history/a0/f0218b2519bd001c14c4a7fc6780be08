@@ -1,0 +1,14 @@
+#ifndef FUNCIONES_H_
+#define FUNCIONES_H_
+#include <stdio.h>
+#include <stdlib.h>
+
+#define kmCargaForzada 7090
+#define precioAerolineasCargaForzada 162965
+#define precioLatamCargaForzada 159339
+
+void mostrarMenu(void);
+void procesarMenu(int opcion, float kmIngresados, float  precioAerolineas, float precioLatam);
+
+
+#endif /* FUNCIONES_H_ */
